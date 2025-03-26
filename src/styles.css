@@ -1,0 +1,126 @@
+body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .start-button, .info-button, .close-button, .retryButton, .backButton {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 15px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .start-button:hover, .info-button:hover, .close-button:hover, .retryButton:hover, .backButton:hover {
+    background-color: #ff9900;
+  }
+  
+  .gameContainer {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .road {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #444;
+  }
+  
+  .laneLine {
+    position: absolute;
+    width: 5px;
+    height: 50px;
+    background-color: white;
+  }
+  
+  .laneBorder {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #ff0000;
+  }
+  
+  .car {
+    position: absolute;
+    bottom: 20px;
+    width: 40px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 5px;
+  }
+  
+  .obstacle {
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    border-radius: 5px;
+  }
+  
+  .score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .gameOverContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .gameOverText {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .finalScore {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .leftButton, .rightButton {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .leftButton {
+    left: 10px;
+  }
+  
+  .rightButton {
+    right: 10px;
+  }
+  
